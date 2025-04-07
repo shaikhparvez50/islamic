@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import { defaultLanguage, Language, languages } from "@/data/languages";
 
@@ -58,6 +57,72 @@ const commonTranslations: CommonTranslations = {
     hi: "सवाल-जवाब",
     ur: "سوالات و جوابات",
     ar: "أسئلة وأجوبة"
+  },
+  broadcast: {
+    en: "Broadcast",
+    hi: "प्रसारण",
+    ur: "نشریات",
+    ar: "البث"
+  },
+  recentBroadcast: {
+    en: "Recent Broadcast",
+    hi: "हालिया प्रसारण",
+    ur: "حالیہ نشریات",
+    ar: "البث الأخير"
+  },
+  featuredBroadcast: {
+    en: "Featured Broadcast",
+    hi: "विशेष प्रसारण",
+    ur: "نمایاں نشریات",
+    ar: "البث المميز"
+  },
+  allBroadcasts: {
+    en: "All Broadcasts",
+    hi: "सभी प्रसारण",
+    ur: "تمام نشریات",
+    ar: "جميع البث"
+  },
+  watchFull: {
+    en: "Watch Full Video",
+    hi: "पूरा वीडियो देखें",
+    ur: "مکمل ویڈیو دیکھیں",
+    ar: "شاهد الفيديو كاملاً"
+  },
+  broadcastTitle1: {
+    en: "Understanding the Teachings of Islam",
+    hi: "इस्लाम की शिक्षाओं को समझना",
+    ur: "اسلام کی تعلیمات کو سمجھنا",
+    ar: "فهم تعاليم الإسلام"
+  },
+  broadcastTitle2: {
+    en: "The History and Significance of Islamic Prayers",
+    hi: "इस्लामिक प्रार्थना��ं का इतिहास और महत्व",
+    ur: "اسلامی نمازوں کی تاریخ اور اہمیت",
+    ar: "تاريخ وأهمية الصلوات الإسلامية"
+  },
+  broadcastDescription1: {
+    en: "An in-depth exploration of the core teachings of Islam and their relevance in today's world.",
+    hi: "इस्लाम की मूल शिक्षाओं और आज के संसार में उनकी प्रासंगिकता का गहन अन्वेषण।",
+    ur: "اسلام کی بنیادی تعلیمات اور آج کی دنیا میں ان کی موزونیت کا گہرا جائزہ۔",
+    ar: "استكشاف متعمق للتعاليم الأساسية للإسلام وأهميتها في عالم اليوم."
+  },
+  broadcastDescription2: {
+    en: "Learn about the historical context and proper practices of Islamic prayers in this educational broadcast.",
+    hi: "इस शैक्षिक प्रसारण में इस्लामिक प्रार्थनाओं के ऐतिहासिक संदर्भ और उचित प्रथाओं के बारे में जानें।",
+    ur: "اس تعلیمی نشریے میں اسلامی نمازوں کے تاریخی تناظر اور مناسب طریقوں کے بارے میں جانیں۔",
+    ar: "تعرف على السياق التاريخي والممارسات الصحيحة للصلوات الإسلامية في هذا البث التعليمي."
+  },
+  broadcastShortTitle: {
+    en: "Islamic Broadcast",
+    hi: "इस्लामिक प्रसारण",
+    ur: "اسلامی نشریات",
+    ar: "البث الإسلامي"
+  },
+  broadcastDate: {
+    en: "April 2025",
+    hi: "अप्रैल 2025",
+    ur: "اپریل 2025",
+    ar: "أبريل 2025"
   },
   pillarsOfIslam: {
     en: "Pillars of Islam",

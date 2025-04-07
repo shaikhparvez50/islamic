@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "@/hooks/useLanguage";
-import { Search, Menu, X, Clock } from "lucide-react";
+import { Search, Menu, X, Clock, Video } from "lucide-react";
 import SearchOverlay from "./SearchOverlay";
 
 const Header = () => {
@@ -30,6 +30,7 @@ const Header = () => {
     { name: t("namaz"), path: "/namaz", icon: <Clock size={16} className="inline" /> },
     { name: t("prophets"), path: "/prophets" },
     { name: t("history"), path: "/history" },
+    { name: t("broadcast"), path: "/broadcast", icon: <Video size={16} className="inline" /> },
     { name: t("questions"), path: "/questions" },
   ];
 
