@@ -1,16 +1,18 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CSSProperties } from "react";
 
 interface ContentCardProps {
   title: string;
   children: React.ReactNode;
   className?: string;
   icon?: React.ReactNode;
+  style?: CSSProperties;
 }
 
-const ContentCard = ({ title, children, className = "", icon }: ContentCardProps) => {
+const ContentCard = ({ title, children, className = "", icon, style }: ContentCardProps) => {
   return (
-    <Card className={`islamic-card shadow-md hover:shadow-lg transition-all duration-500 overflow-hidden ${className} hover:-translate-y-2`}>
+    <Card className={`islamic-card shadow-md hover:shadow-lg transition-all duration-500 overflow-hidden ${className} hover:-translate-y-2`} style={style}>
       <CardHeader className="bg-gradient-to-r from-islamic-lightgreen to-islamic-lightblue border-b border-islamic-green/20">
         <CardTitle className="text-islamic-green flex items-center gap-2 group">
           {icon && (
