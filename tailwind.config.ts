@@ -53,14 +53,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))"
         },
-        // Islamic-themed colors
+        // Islamic-themed colors - enhanced with more vibrant greens and blues
         islamic: {
-          green: "#10B981",
+          green: "#0D9488", // More vibrant teal-green
           gold: "#F59E0B",
-          blue: "#1E40AF",
+          blue: "#1E40AF", // Deeper blue
           burgundy: "#9F1239",
           teal: "#0D9488",
-          cream: "#FFFAF0"
+          cream: "#FFFAF0",
+          lightgreen: "#ECFDF5", // Light green for backgrounds
+          lightblue: "#EFF6FF"  // Light blue for backgrounds
         }
       },
       borderRadius: {
@@ -88,6 +90,22 @@ export default {
         "scale-in": {
           "0%": { opacity: "0", transform: "scale(0.95)" },
           "100%": { opacity: "1", transform: "scale(1)" }
+        },
+        "slide-in-top": {
+          "0%": { transform: "translateY(-20px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" }
+        },
+        "slide-in-right": {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" }
+        },
+        "slide-out-right": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(100%)" }
+        },
+        "pulse-soft": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.8" }
         }
       },
       animation: {
@@ -95,7 +113,11 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.5s ease-out",
         "float": "float 3s ease-in-out infinite",
-        "scale-in": "scale-in 0.3s ease-out"
+        "scale-in": "scale-in 0.3s ease-out",
+        "slide-in-top": "slide-in-top 0.3s ease-out",
+        "slide-in-right": "slide-in-right 0.3s ease-out",
+        "slide-out-right": "slide-out-right 0.3s ease-out",
+        "pulse-soft": "pulse-soft 2s ease-in-out infinite"
       },
       backgroundImage: {
         "pattern": "url('/images/islamic-pattern.png')"
