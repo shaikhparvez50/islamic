@@ -83,7 +83,7 @@
   }
   
   .islamic-card {
-    @apply bg-white rounded-lg shadow-md overflow-hidden border border-islamic-green/20 transition-all duration-300 hover:shadow-lg;
+    @apply bg-white rounded-lg shadow-md overflow-hidden border border-islamic-green/20 transition-all duration-500 hover:shadow-lg;
   }
   
   .islamic-pattern-bg {
@@ -93,15 +93,20 @@
 
   /* Animation utility classes */
   .animate-hover-scale {
-    @apply transition-transform duration-300 hover:scale-105;
+    @apply transition-transform duration-500 hover:scale-125;
   }
   
   .animate-hover-lift {
-    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-md;
+    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-lg;
   }
   
   .animate-pulse-glow {
     @apply animate-pulse-soft;
+  }
+
+  /* Button animations */
+  .btn-animate {
+    @apply relative overflow-hidden transition-all duration-500 hover:shadow-lg transform hover:-translate-y-1 after:absolute after:content-[''] after:bg-white after:h-full after:w-full after:opacity-0 after:top-0 after:left-0 after:transition-all after:duration-500 hover:after:opacity-20 after:transform after:scale-0 hover:after:scale-100;
   }
 }
 
@@ -129,7 +134,7 @@
 }
 
 .tree-node-content {
-  @apply mb-2 p-3 rounded-md transition-all duration-300 hover:bg-islamic-green/5;
+  @apply mb-2 p-3 rounded-md transition-all duration-500 hover:bg-islamic-green/5;
 }
 
 .tree-node-children {

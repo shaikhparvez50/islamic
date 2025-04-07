@@ -25,10 +25,10 @@ const Index = () => {
               {t("exploreMessage")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
-              <Button asChild className="bg-islamic-green hover:bg-islamic-green/90 text-white">
+              <Button asChild className="bg-islamic-green hover:bg-islamic-green/90 text-white shadow-md transform transition-all duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-lg">
                 <Link to="/learn">{t("startLearning")}</Link>
               </Button>
-              <Button asChild variant="outline" className="border-islamic-gold text-islamic-gold hover:bg-islamic-gold/10">
+              <Button asChild variant="outline" className="btn-animate border-islamic-gold text-islamic-gold hover:bg-islamic-gold/10">
                 <Link to="/quran">{t("exploreQuran")}</Link>
               </Button>
             </div>
@@ -42,7 +42,7 @@ const Index = () => {
               {t("exploreMessage")}
             </h2>
             
-            <div className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <div className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg animate-fade-in">
               <TreeNode 
                 title={t("allahTitle")} 
                 content={<p className="text-gray-700">{t("allahDescription")}</p>}
@@ -79,7 +79,7 @@ const Index = () => {
                 <p className="mb-4 text-gray-700">
                   {t("footerDescription")}
                 </p>
-                <Button asChild variant="outline" className="w-full mt-4">
+                <Button asChild variant="outline" className="w-full mt-4 btn-animate">
                   <Link to="/learn">{t("learnMore")}</Link>
                 </Button>
               </ContentCard>
@@ -92,7 +92,7 @@ const Index = () => {
                 <p className="mb-4 text-gray-700">
                   {t("footerDescription")}
                 </p>
-                <Button asChild variant="outline" className="w-full mt-4">
+                <Button asChild variant="outline" className="w-full mt-4 btn-animate">
                   <Link to="/quran">{t("learnMore")}</Link>
                 </Button>
               </ContentCard>
@@ -105,7 +105,7 @@ const Index = () => {
                 <p className="mb-4 text-gray-700">
                   {t("footerDescription")}
                 </p>
-                <Button asChild variant="outline" className="w-full mt-4">
+                <Button asChild variant="outline" className="w-full mt-4 btn-animate">
                   <Link to="/prophets">{t("learnMore")}</Link>
                 </Button>
               </ContentCard>

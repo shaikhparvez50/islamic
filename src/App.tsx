@@ -12,6 +12,7 @@ import Quran from "./pages/Quran";
 import Prophets from "./pages/Prophets";
 import History from "./pages/History";
 import Questions from "./pages/Questions";
+import Namaz from "./pages/Namaz";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/prophets" element={<Prophets />} />
             <Route path="/history" element={<History />} />
             <Route path="/questions" element={<Questions />} />
+            <Route path="/namaz" element={<Namaz />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

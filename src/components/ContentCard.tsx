@@ -10,11 +10,11 @@ interface ContentCardProps {
 
 const ContentCard = ({ title, children, className = "", icon }: ContentCardProps) => {
   return (
-    <Card className={`islamic-card shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden ${className} hover:-translate-y-1`}>
+    <Card className={`islamic-card shadow-md hover:shadow-lg transition-all duration-500 overflow-hidden ${className} hover:-translate-y-2`}>
       <CardHeader className="bg-gradient-to-r from-islamic-lightgreen to-islamic-lightblue border-b border-islamic-green/20">
         <CardTitle className="text-islamic-green flex items-center gap-2 group">
           {icon && (
-            <span className="transition-transform duration-300 group-hover:scale-110 text-islamic-blue">
+            <span className="transition-transform duration-500 group-hover:scale-125 text-islamic-blue">
               {icon}
             </span>
           )}

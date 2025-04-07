@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "@/hooks/useLanguage";
-import { Search, Menu, X } from "lucide-react";
+import { Search, Menu, X, Clock } from "lucide-react";
 import SearchOverlay from "./SearchOverlay";
 
 const Header = () => {
@@ -27,6 +27,7 @@ const Header = () => {
     { name: t("home"), path: "/" },
     { name: t("learn"), path: "/learn" },
     { name: t("quran"), path: "/quran" },
+    { name: t("namaz"), path: "/namaz", icon: <Clock size={16} className="inline" /> },
     { name: t("prophets"), path: "/prophets" },
     { name: t("history"), path: "/history" },
     { name: t("questions"), path: "/questions" },
@@ -38,7 +39,7 @@ const Header = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link
             to="/"
-            className="text-2xl font-bold text-islamic-green flex items-center gap-2 transition-transform duration-300 hover:scale-105"
+            className="text-2xl font-bold text-islamic-green flex items-center gap-2 transition-transform duration-500 hover:scale-110"
           >
             <span className="text-islamic-gold animate-pulse-soft">☪</span> 
             <span className="hidden sm:inline">{t("siteName")}</span>
@@ -50,8 +51,9 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="text-gray-700 hover:text-islamic-green transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-islamic-green after:transition-all hover:after:w-full"
+                className="text-gray-700 hover:text-islamic-green transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-islamic-green after:transition-all hover:after:w-full hover:-translate-y-1"
               >
+                {item.icon && <span className="mr-1">{item.icon}</span>}
                 {item.name}
               </Link>
             ))}
@@ -59,7 +61,7 @@ const Header = () => {
 
           <div className="flex items-center gap-4">
             <button 
-              className="text-gray-600 hover:text-islamic-green transition-colors duration-200 relative p-2 rounded-full hover:bg-islamic-green/10"
+              className="text-gray-600 hover:text-islamic-green transition-colors duration-300 relative p-2 rounded-full hover:bg-islamic-green/10"
               aria-label="Search"
               onClick={openSearch}
             >
@@ -69,7 +71,7 @@ const Header = () => {
             
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden text-gray-600 hover:text-islamic-green transition-colors duration-200"
+              className="md:hidden text-gray-600 hover:text-islamic-green transition-colors duration-300"
               onClick={toggleMenu}
               aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
             >
@@ -86,10 +88,11 @@ const Header = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className="text-gray-700 hover:text-islamic-green transition-colors duration-200 py-2 border-b border-gray-100 animate-slide-in-top"
+                  className="text-gray-700 hover:text-islamic-green transition-colors duration-300 py-2 border-b border-gray-100 animate-slide-in-top"
                   style={{ animationDelay: `${index * 0.05}s` }}
                   onClick={() => setIsMenuOpen(false)}
                 >
+                  {item.icon && <span className="mr-1">{item.icon}</span>}
                   {item.name}
                 </Link>
               ))}

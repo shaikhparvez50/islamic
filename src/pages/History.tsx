@@ -27,7 +27,7 @@ const History = () => {
         </section>
 
         {/* History Content */}
-        <section className="py-12 bg-gray-50">
+        <section className="py-12 bg-gray-50 islamic-pattern-bg">
           <div className="container mx-auto px-4">
             <div className="relative">
               <div className="absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-islamic-burgundy/30"></div>
@@ -39,13 +39,17 @@ const History = () => {
                   if (!periodContent) return null;
                   
                   return (
-                    <div key={period.id} className={`relative ${index % 2 === 0 ? 'md:pr-1/2' : 'md:pl-1/2 md:ml-auto'}`}>
-                      <div className="absolute left-4 md:left-1/2 top-6 md:transform md:-translate-x-1/2 w-4 h-4 rounded-full bg-islamic-burgundy border-4 border-white"></div>
+                    <div 
+                      key={period.id} 
+                      className={`relative ${index % 2 === 0 ? 'md:pr-1/2' : 'md:pl-1/2 md:ml-auto'}`}
+                    >
+                      <div className="absolute left-4 md:left-1/2 top-6 md:transform md:-translate-x-1/2 w-4 h-4 rounded-full bg-islamic-burgundy border-4 border-white animate-pulse-soft"></div>
                       
                       <div className="ml-12 md:ml-0 md:w-[90%]">
                         <ContentCard 
                           title={periodContent.title}
-                          className="animate-fade-in"
+                          className="animate-fade-in animate-hover-lift"
+                          style={{ animationDelay: `${index * 0.2}s` }}
                         >
                           <Badge className="mb-2 bg-islamic-burgundy/10 text-islamic-burgundy hover:bg-islamic-burgundy/20 border border-islamic-burgundy/20">
                             {periodContent.timeframe}
@@ -57,9 +61,9 @@ const History = () => {
                             <h4 className="font-medium text-islamic-burgundy mb-2">{t("keyEvents")}</h4>
                             <ul className="space-y-2">
                               {periodContent.keyEvents.map((event, index) => (
-                                <li key={index} className="flex items-start">
-                                  <span className="text-islamic-gold mr-2">•</span>
-                                  <span>{event}</span>
+                                <li key={index} className="flex items-start group">
+                                  <span className="text-islamic-gold mr-2 transition-transform duration-300 group-hover:scale-125">•</span>
+                                  <span className="group-hover:text-islamic-burgundy transition-colors duration-300">{event}</span>
                                 </li>
                               ))}
                             </ul>
