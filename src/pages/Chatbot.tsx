@@ -17,10 +17,10 @@ const Chatbot = () => {
         <section className="bg-islamic-teal py-12">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white animate-fade-in flex items-center justify-center gap-2">
-              <Book className="inline-block" size={28} /> {t("chatbot")}
+              <Book className="inline-block" size={28} /> Islamic Chatbot
             </h1>
             <p className="text-lg text-white/80 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              Ask questions about Islam and receive informative answers based on Islamic teachings.
+              Ask anything about Islam – teachings, history, or practices – and get AI-powered answers.
             </p>
           </div>
         </section>
@@ -32,18 +32,18 @@ const Chatbot = () => {
               <div className="mb-6 text-center">
                 <h2 className="text-2xl font-semibold text-islamic-green mb-2">Islamic Knowledge Assistant</h2>
                 <p className="text-gray-600">
-                  Get accurate information about Islamic principles, history, practices, and more.
+                  Ask your question below and receive a detailed, authentic answer.
                 </p>
               </div>
               
               <IslamicChatbot />
               
               <div className="mt-8 p-4 bg-islamic-gold/10 rounded-lg border border-islamic-gold/20">
-                <h3 className="font-medium text-islamic-green mb-2">Usage Tips:</h3>
+                <h3 className="font-medium text-islamic-green mb-2">Tips:</h3>
                 <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
-                  <li>Ask specific questions about Islamic teachings, practices, or history</li>
-                  <li>You can inquire about the Quran, Hadith, Prophets, and Islamic principles</li>
-                  <li>For complex topics, try breaking them down into simpler questions</li>
+                  <li>Ask about Quran, Hadith, pillars of Islam, history, etc.</li>
+                  <li>For complex topics, ask short and clear questions.</li>
+                  <li>AI uses authentic Islamic sources for replies.</li>
                   <li>Press the reset button to start a new conversation</li>
                 </ul>
               </div>
