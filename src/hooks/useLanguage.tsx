@@ -108,7 +108,7 @@ const commonTranslations: CommonTranslations = {
   },
   broadcastDescription2: {
     en: "Learn about the historical context and proper practices of Islamic prayers in this educational broadcast.",
-    hi: "इस शैक्षिक प्रसारण में इस्लामिक प्रार्थनाओं के ऐतिहासिक संदर्भ और उचित प्रथाओं के बारे में जानें।",
+    hi: "इस शैक्षिक प्रसारण में इस्ल��मिक प्रार्थनाओं के ऐतिहासिक संदर्भ और उचित प्रथाओं के बारे में जानें।",
     ur: "اس تعلیمی نشریے میں اسلامی نمازوں کے تاریخی تناظر اور مناسب طریقوں کے بارے میں جانیں۔",
     ar: "تعرف على السياق التاريخي والممارسات الصحيحة للصلوات الإسلامية في هذا البث التعليمي."
   },
@@ -239,10 +239,22 @@ const commonTranslations: CommonTranslations = {
     ar: "الرسول الأخير لله، الذي تلقى وحي القرآن"
   },
   chatbot: {
-    en: "Ask AI",
-    hi: "AI से पूछें",
-    ur: "AI سے پوچھیں",
-    ar: "اسأل الذكاء الاصطناعي"
+    en: "Islamic Assistant",
+    hi: "इस्लामिक सहायक",
+    ur: "اسلامی اسسٹنٹ",
+    ar: "المساعد الإسلامي"
+  },
+  askChatbot: {
+    en: "Ask About Islam",
+    hi: "इस्लाम के बारे में पूछें",
+    ur: "اسلام کے بارے میں پوچھیں",
+    ar: "اسأل عن الإسلام"
+  },
+  chatbotDescription: {
+    en: "Get answers about Islamic teachings, history and practices",
+    hi: "इस्लामिक शिक्षाओं, इतिहास और प्रथाओं के बारे में जवाब प्राप्त करें",
+    ur: "اسلامی تعلیمات، تاریخ اور طریقوں کے بارے میں جوابات حاصل کریں",
+    ar: "احصل على إجابات حول التعاليم الإسلامية والتاريخ والممارسات"
   }
 };
 
