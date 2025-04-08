@@ -14,6 +14,7 @@ import History from "./pages/History";
 import Questions from "./pages/Questions";
 import Namaz from "./pages/Namaz";
 import Broadcast from "./pages/Broadcast";
+import Chatbot from "./pages/Chatbot";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/questions" element={<Questions />} />
             <Route path="/namaz" element={<Namaz />} />
             <Route path="/broadcast" element={<Broadcast />} />
+            <Route path="/chatbot" element={<Chatbot />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
